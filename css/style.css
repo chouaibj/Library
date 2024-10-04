@@ -1,0 +1,232 @@
+*{
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior:auto;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.navbar-nav li {
+    list-style: none;
+    padding-bottom: 2vh
+}
+.navbar-nav a {
+    text-decoration: none;
+    margin-left: 100px;
+    font-size: 2em;
+    color: #fff;
+    padding-right: 3rem;
+    padding-left: 0.5rem;
+}
+.navbar-nav {
+    display: flex;
+    position: relative;
+    margin-bottom: 2em;
+}
+.navbar {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50em/50em;
+    background-color: #333;
+}
+
+h1.rounded {
+    font-family: "Cabin Sketch",cursive;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    background-color: rgb(57, 134, 206);
+    color: #fff;
+    margin: 1em 5em 0em 5em;
+    border: 2px solid #dee2e6;
+    border-color: #555;
+    border-radius: 50em/50em;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+    text-align: center;
+    padding-top: 2em;
+}
+.table-dark{
+    background-color: #333;
+    color: white;
+}
+th, td{
+    padding: 1em 2em;
+}
+tr{
+    border-bottom: 5px solid; 
+}
+
+.btn.btn-warning {
+    background-color: rgb(211, 165, 26);
+    color: rgb(255, 255, 255);
+    padding: 0.7em;
+    border-radius: 45em/70em;
+}
+
+.btn.btn-danger {
+    background-color: rgb(181, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 0.7em;
+    border-radius: 45em/70em;
+}
+
+.btn.btn-success.d-block{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: forestgreen;
+    color: white;
+    margin-top: 1em;
+    margin-left: 20em;
+    margin-right: 20em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 50em/50em;
+}
+
+form{
+    font-family: "Cabin Sketch",cursive;
+    justify-content: center;
+    display: grid;
+}
+
+input#titre, input#nbPages{
+    width: -webkit-fill-available;
+    padding: 4px 20em;
+    margin-bottom: 30px;
+}
+input#image{
+    width: -webkit-fill-available;
+    margin-bottom: 30px;
+}
+button.btn.btn-primary{
+    background-color: rgb(24, 184, 18);
+    color: rgb(255, 255, 255);
+    padding: 0.7em;
+    border-radius: 45em/70em;
+    width: 15%;
+}
+.valid-ajout{
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.col-6{
+    padding-left: 9em;
+    font-size: 1.2em;
+}
+
+.alert.alert-success{
+    text-align: center;
+    border-radius: 40em/40em;
+    background-color: green;
+    padding: 4px 20em;
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
+.info{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2em 10em 0em 10em;
+    font-size: 1.2em; 
+}
+
+.intro{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2em 10em 0em 10em;
+    font-size: 1.5em; 
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
